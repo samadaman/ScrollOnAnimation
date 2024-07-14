@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meta Store Pvt Ltd.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="https://1000logos.net/wp-content/uploads/2021/10/logo-Meta-1536x864.png">
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+  <body>
+    <style>
+        /* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    } */
+    body{
+        /* background-color: rgb(197, 226, 241); */
+        padding-bottom: 5%;
+    }
+
+    .searchBtn{
+        width: 10rem;
+        padding: 5% 5%;
+        font-family: 'Rubik', sans-serif;
+        color: #ffff;
+    }
+    nav{
+        background-color: rgb(197, 226, 241);
+        /* background-color: #ffff; */
+        z-index: 2;
+    }
+    .navbar{
+        position: fixed;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    ul{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    ul li{
+      display: inline-block;
+      margin-left: 40px;
+      cursor: pointer;
+      /* padding: 2% 3% 2% 3%; */
+      /* background-color: red; */
+    }
+    ul li:hover{
+      transition: all .5s;
+      transform: scale(1.1);
+    }
+    .headphone{
+        background-image: url(https://wallpapercave.com/wp/wp1884073.jpg);
+        height: 59rem;
+        background-size: cover;
+        background-repeat: no-repeat; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 8%;
+    }
+    .headphones{
+        height: 59rem;
+        background-size: cover;
+        background-repeat: no-repeat; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 8%;
+    }
+    .heading h2{
+        font-size: 60px;
+        width: 60%; 
+        color: #ffffff;
+    }
+    .headphones .heading h2{
+        font-size: 60px;
+        width: 60%; 
+        color: #ffffff;
+    }
+    .headphones .heading button{
+        color: #fff;
+        border: 2px solid rgb(52, 195, 255);
+        border-radius: 0%;
+        width: 15rem;
+    }
+    .headphones .heading button:hover{
+        background-color: rgb(52, 195, 255);
+        color: black;
+    }
+    .heading button{
+        width: 11rem;
+        padding: 1%;
+    }
+    span{ 
+        text-decoration: underline;
+    }
+    .slideImg img{
+        height: 550px;
+    }
+    .pHori{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .hori{
+        margin-top: 7vh!important;
+        width: 80%;
+    }
+    .sample{
+        font-size: 45px;
+        font-weight: bold;
+        color: rgb(160, 213, 239);
+    }
+    .aboutContainer{
+        background-image: url(https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply);
+        height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 6%;
+    }
+    .aboutContainer h1{
+        font-weight: lighter;
+        line-height: 2;
+    }
+    .joinBtn button{
+        width: 15rem;
+        border-radius: 0%;
+    }
+    .para p{
+        font-weight: lighter;
+        font-size: small;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 2.5;
+    }
+    .para{
+        display: flex;
+        justify-content: center;
+    }
+    .cards{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 7%;
+        margin-bottom: 5%;
+    }
+    .card img:hover{
+        transform: scale(1.1);
+        transition: all .5s;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .last{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       margin-top: 8%;
+       background-color: rgb(197, 226, 241);
+       padding: 4%;
+    }
+    .last h4{
+        letter-spacing: 6px;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: medium;
+    }
+    .last h1{
+        text-align: center;
+        font-weight: lighter;
+        padding-bottom: 2%;
+    }
+    .last input{
+        padding: 6% 6%;
+        border-radius: 0%;
+    }
+    .last button{
+        padding: 6% 6%;
+        border-radius: 0;
+        color: #ffff;
+        font-weight: bold;
+        letter-spacing: 6px;
+    }
+    #video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+#scroll-video {
+  width: 100%;
+  height: auto;
+  /* z-index: 8; */
+}
+
+    </style>
+
+    <div class="parent">
+      <div id="video-container" >
+            <video id="scroll-video" src="Unreal_clone_website_background_video(1440p).webm" autoplay loop muted></video>
+          </div>
+        <nav class="navbar" data-aos="slide-down">
+            <div class="container-fluid">
+                <div class="d-flex align-items-center">
+                <img height="30" src="https://1000logos.net/wp-content/uploads/2021/10/logo-Meta-1536x864.png" alt="">
+              <a href="#" class="navbar-brand fw-semibold fs-4">Meta Store</a></div>
+              <ul>
+                <li class="fw-semibold" style="color: blue;">Home</li>
+                <li class="fw-semibold">Products</li>
+                <li class="fw-semibold">Events</li>
+                <li class="fw-semibold">Learn</li>
+                <li class="fw-semibold">Community</li>
+              </ul>
+              <form class="d-flex" role="search">
+                <button class="btn searchBtn btn-info" type="submit" data-aos="slide-left">CONTACT US</button>
+              </form>
+            </div>
+          </nav>
+          <div class="container-fluid headphones" data-aos="fade-up">
+            <div class="container heading" >
+                <h2 class="fw-semibold mb-2">Discover Endless Possibilities of Style & Fashion Shedule With Sence at <span class="text-info">META STORE</span></h2>
+                <button class="btn mt-5 btn-outline-light text-light">CONTACT US</button>
+            </div>
+      </div>
+          
+          <div class="container-fluid headphone" data-aos="fade-up">
+                <div class="container heading" >
+                    <h2 class="fw-bold mb-2">Discover Endless Possibilities of Style at <span class="text-info">META STORE</span></h2>
+                    <button class="btn mt-5 btn-outline-info text-light">CONTACT US</button>
+                </div>
+          </div>
+
+          
+          <!-- <div class="pHori">
+          <hr class="hori"></div> -->
+
+          <!-- COURSEL IMAGES SECTION -->
+
+          <div class="container-fluid coursel mb-5 mt-5" data-aos="slide-up">
+             <h1 class="text-center sample ">OUR WORK SAMPLE OF T-SHIRT</h1>
+            <div class="container slider mt-5">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item slideImg active">
+                       <img src="https://cdn.shopify.com/s/files/1/0083/6380/2739/files/TOP20170211_0603-1.jpg?v=1531142742" class="d-block w-100" alt="...">
+                        
+                      </div>
+                      <div class="carousel-item slideImg">
+                        <img src="https://mybestpricetoday.com/wp-content/uploads/2020/11/Men-Shirt_Banner.jpg" class="d-block w-100" alt="...">
+
+                      </div>
+                      <div class="carousel-item slideImg">
+                        <img src="https://storage.googleapis.com/stateless-www-stylebee-ca/2015/10/StyleBee_FallFoundation_1new.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                   <button class=" text-info carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class=" text-info carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div> 
+            </div>
+          </div>
+          <div class="pHori pt-5">
+            <hr class="container mb-5"></div>
+
+          <!-- CARD SECTION --> 
+          
+          <div class="container" data-aos="slide-up">
+            <h1 class="text-center sample ">ORDER YOUR PRODUCT FROM HERE</h1>
+            <div class="cards">
+          <div class="card" data-aos="fade-right" style="width: 18rem;">
+            <img src="https://sw6.elbenwald.de/media/dd/48/65/1688683150/E1073058_3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Naruto Over Size</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-info text-light fw-semibold">ADD TO CART</a>
+            </div>
+          </div>
+
+          <div class="card" data-aos="fade-right" style="width: 18rem;">
+            <img src="https://cdn.hyvesports.com/wp-content/uploads/2020/11/Scratch-Flames-Women-Cricket-Polo-Jersey-Front_tiny.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Jersey T-shirt </h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-info text-light fw-semibold">ADD TO CART</a>
+            </div>
+          </div>
+
+          <div class="card" data-aos="fade-right" style="width: 18rem;">
+            <img src="https://i.pinimg.com/474x/a0/1e/0a/a01e0a33970f2591d44e62ee6ecca94d.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Anime Design T-Shirt</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-info text-light fw-semibold">ADD TO CART</a>
+            </div>
+          </div>    
+        </div>
+    </div>
+          <!-- ABOUT SECTION  -->
+
+         <div class="aboutUs" data-aos="slide-up">
+            <div class=" aboutContainer text-center">
+                <h1>Discover style that speaks volumes at META SHOP</h1>
+                <div class="para">
+                <p>Welcome to META SHOP! We are a premier destination for fashion enthusiasts seeking the latest trends, high-quality garments, and exceptional customer service. At META SHOP, we believe that clothing is not just about covering your body but making a statement and expressing your unique style.</p>
+           </div> 
+           <div class="joinBtn mt-5">
+           <button class="btn btn-outline-info">JOIN THE COMMUNITY</button></div>
+        </div>
+         </div>
+
+         <!-- EMAIL SECTION -->
+
+         <div class="container last" data-aos="slide-up">
+            
+            <h4>NEWSLETTER</h4>
+             <h1>Get updates on industry innovation and latest assets that are useful your industry</h1>   
+             <p>Date of birth</p>
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-3">
+                  <input type="text" class="form-control" placeholder="DD" id="validationCustom01" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <input type="text" class="form-control" placeholder="MM" id="validationCustom02" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="input-group has-validation">
+                    <input type="text" class="form-control" placeholder="YY" id="validationCustomUsername"  required>
+                    <div class="invalid-feedback">
+                      Please choose a username.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="">
+                      <button class="btn btn-info" type="submit">SUBMIT</button>
+                    </div>
+                  </div>
+                <a class="text-center text-decoration-none text-primary fw-semibold pt-3" href="#">Privacy policy</a>
+              </form>
+         </div>
+
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset:100,
+        duration: 1000
+      });
+    </script>
+    <script>
+      window.addEventListener('scroll', function() {
+    var scrollPosition = window.pageYOffset;
+    var videoContainer = document.getElementById('video-container');
+    videoContainer.style.height = (100 - scrollPosition * 0.2) + 'vh';
+  });
+  
+  </script>
+  </body>
+</html>
